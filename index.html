@@ -27,19 +27,6 @@
         <!-- grid system is out of 12, so use it like this <div row> inside there put div class = col-# where # is that #/12 -->
         
         <div id="container">
-
-            <center><button id="menu">Menu</button></center>
-            <div id="menuitems">
-                <center>
-                    <div id="list">
-                        <span>About me<span>
-                        <span>What I do<span>
-                        <span>Resume<span>
-                        <span>Social<span>
-                    </div>
-                </center>
-            </div>
-
             <div id="name">Shivansh Rustagi</div>
             <div id="header">
                 <hr />
@@ -49,21 +36,40 @@
             <h2>About me:</h2>
             <p>&nbsp;&nbsp;&nbsp;&nbsp;I'm a rising senior at Henry M. Gunn High School.</p>
 
+            <h2>What I do:</h2>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;I <span style="font-family: 'Roboto', sans-serif;" class="element"></span></p>
+
+            <h2>Resume:</h2>
+            <p><i class="fa fa-fw fa-file-pdf-o">&nbsp;&nbsp;</i><a href="docs/resume.pdf" target="_blank">Here's my resume in PDF form.</a></p>
+
             <h2>Social:</h2>
             <div id="social">
-                <span><a href="http://instagram.com/shivrustagi"><i class="fa fa-2x fa-instagram"></i></a></span>
-                <span><a href="mailto:rustagi.shiv@gmail.com"><i class="fa fa-2x fa-envelope-square"></i></a></span>
-                <span><a href="http://github.com/srustagi"><i class="fa fa-2x fa-github-square"></i></a></span>
-                <span><a href="http://linkedin.com/in/srustagi"><i class="fa fa-2x fa-linkedin-square"></i></a></span>
-                <span><a href="https://open.spotify.com/user/shivanshrustagi"><i class="fa fa-2x fa-spotify"></i></a></span>
+                <span><a href="http://instagram.com/shivrustagi" alt="Instagram"><i class="fa fa-2x fa-instagram"></i></a></span>
+                <span><a href="mailto:rustagi.shiv@gmail.com" alt="Email"><i class="fa fa-2x fa-envelope-square"></i></a></span>
+                <span><a href="http://github.com/srustagi" alt="Github"><i class="fa fa-2x fa-github-square"></i></a></span>
+                <span><a href="http://linkedin.com/in/srustagi" alt="LinkedIn"><i class="fa fa-2x fa-linkedin-square"></i></a></span>
+                <span><a href="https://open.spotify.com/user/shivanshrustagi" alt="Spotify"><i class="fa fa-2x fa-spotify"></i></a></span>
             </div>
         </div>
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-        <script type="text/javascript">
-            $(function() {
-                
+        <script src="js/typed.js"></script>
+        <script>
+            $(function(){
+                $(".element").typed({
+                    strings: ["write code.", "take photos.", "ride road bikes.", ""],
+                    typeSpeed: 100,
+                    backDelay: 1700,
+                    fadeOut: true,
+                    fadeOutClass: 'typed-fade-out',
+                    fadeOutDelay: 500,
+                    loop: true,
+                });
+            });
+
+            $('#menu').click(function(){
+                $('#menuitems').fadeToggle("slow", "linear");
             });
         </script>
 
