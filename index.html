@@ -7,13 +7,10 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
         <title>Shivansh Rustagi</title>
-        <meta name="description" content="" />
+        <meta name="description" content="Shiv Rustagi's personal website." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <link rel="icon" type="image/png" href="img/favicon.png">
-        <link rel="stylesheet" href="css/normalize.min.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="stylesheet" href="css/main.css" />
         <link rel="stylesheet" href="css/styles.css" />
 
         <script src="https://use.fontawesome.com/f21ff73334.js"></script>
@@ -29,47 +26,45 @@
         <div id="container">
             <div id="name">Shivansh Rustagi</div>
             <div id="header">
-                <hr />
+                <hr id="profile" />
                 <div id="avatar"></div>
             </div>
 
             <h2>About me:</h2>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;I'm a rising senior at Henry M. Gunn High School.</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;I'm a rising senior at Henry M. Gunn High School. I'm interested in natural language processing, machine learning, full stack web development, and Android apps. In my free time, I <span style="font-family: 'Roboto', sans-serif;" class="element"></span>.</p>
 
-            <h2>What I do:</h2>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;I <span style="font-family: 'Roboto', sans-serif;" class="element"></span></p>
+            <h2>R&eacute;sum&eacute;:</h2>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-fw fa-file-pdf-o">&nbsp;&nbsp;</i><a href="docs/resume.pdf" target="_blank">Here</a> is my r&eacute;sum&eacute;.</p>
 
-            <h2>Resume:</h2>
-            <p><i class="fa fa-fw fa-file-pdf-o">&nbsp;&nbsp;</i><a href="docs/resume.pdf" target="_blank">Here's my resume in PDF form.</a></p>
-
-            <h2>Social:</h2>
-            <div id="social">
-                <span><a href="http://instagram.com/shivrustagi" alt="Instagram"><i class="fa fa-2x fa-instagram"></i></a></span>
-                <span><a href="mailto:rustagi.shiv@gmail.com" alt="Email"><i class="fa fa-2x fa-envelope-square"></i></a></span>
-                <span><a href="http://github.com/srustagi" alt="Github"><i class="fa fa-2x fa-github-square"></i></a></span>
-                <span><a href="http://linkedin.com/in/srustagi" alt="LinkedIn"><i class="fa fa-2x fa-linkedin-square"></i></a></span>
-                <span><a href="https://open.spotify.com/user/shivanshrustagi" alt="Spotify"><i class="fa fa-2x fa-spotify"></i></a></span>
-            </div>
+            <h2>Thoughts:</h2>
+            <p>&nbsp;&nbsp;&nbsp;<i class="fa fa-fw fa-medium"></i>&nbsp;I write on <a href="http://medium.com/@shivrustagi" target="_blank">Medium.</a></p>
         </div>
 
+        <div id="links">
+            <div id="social">
+                <span><a href="#" target="_blank" alt="Photos"><i class="fa fa-2x fa-camera-retro"></i></a></span>
+                <span><a href="mailto:rustagi.shiv@gmail.com" target="_blank" alt="Email"><i class="fa fa-2x fa-envelope-square"></i></a></span>
+                <span><a href="http://github.com/srustagi" target="_blank" alt="Github"><i class="fa fa-2x fa-github-square"></i></a></span>
+                <span><a href="http://linkedin.com/in/srustagi" target="_blank" alt="LinkedIn"><i class="fa fa-2x fa-linkedin-square"></i></a></span>
+                <span><a href="https://open.spotify.com/user/shivanshrustagi" target="_blank" alt="Spotify"><i class="fa fa-2x fa-spotify"></i></a></span>
+            </div>
+
+            <center><p id="love">Made with <span style="color: #C0392B;">&#x2764;</span> by Shivansh Rustagi</p></center>
+        </div>
+        
+        <!-- change to // -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/typed.js"></script>
         <script>
             $(function(){
                 $(".element").typed({
-                    strings: ["write code.", "take photos.", "ride road bikes.", ""],
-                    typeSpeed: 100,
+                    strings: ["volunteer", "listen to music", "take photos", "ride road bikes"],
+                    typeSpeed: 80,
                     backDelay: 1700,
                     fadeOut: true,
                     fadeOutClass: 'typed-fade-out',
-                    fadeOutDelay: 500,
                     loop: true,
                 });
-            });
-
-            $('#menu').click(function(){
-                $('#menuitems').fadeToggle("slow", "linear");
             });
         </script>
 

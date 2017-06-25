@@ -1,8 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:300');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('main.css');
 
 @font-face {
     font-family: 'Ambroise';
     src: url(../font/ambroise.otf);
+}
+
+@font-face {
+    font-family: 'Century Gothic';
+    src: url(../font/Century Gothic.ttf);
 }
 
 .typed-fade-out{
@@ -17,16 +23,19 @@
 	-moz-animation: blink 0.7s infinite;
 	animation: blink 0.7s infinite;
 }
+
 @keyframes blink{
 	0% { opacity:1; }
 	50% { opacity:0; }
 	100% { opacity:1; }
 }
+
 @-webkit-keyframes blink{
 	0% { opacity:1; }
 	50% { opacity:0; }
 	100% { opacity:1; }
 }
+
 @-moz-keyframes blink{
 	0% { opacity:1; }
 	50% { opacity:0; }
@@ -43,7 +52,7 @@
 		background: url('../img/paper.png');
 	}
 
-	#container{
+	#container, #links{
 		margin: 10px 10px 10px 10px;
 		padding: 10px 20px 10px 20px;
 		box-shadow: 0 1px 2px #aaa;
@@ -61,6 +70,8 @@
 
 	#header{
 		padding-top: 36px;
+		margin-top: 20px;
+		margin-bottom: 20px;
 	}
 
 	hr{
@@ -70,9 +81,13 @@
 		margin: 0 auto;
 	}
 
+	hr#profile{
+		border-top: 3px double #8c8b8b;
+	}
+
 	#avatar{
 		margin: 0 auto;
-		margin-top: -37px;
+		margin-top: -39px;
 		width: 72px;
 		height: 72px;
 		border-radius: 100%;
@@ -84,10 +99,10 @@
 		padding: 0;
 		margin: 0;
 		margin-top: 10px;
-		font-family: 'Roboto Condensed', sans-serif;
+		font-family: 'Century Gothic', sans-serif;
 		font-weight: 300;
 		color: #2c3e50;
-		font-size: 28px;
+		font-size: 24px;
 	}
 
 	p{
@@ -101,7 +116,7 @@
 	p a:link, p a:active, p a:visited{
 		text-decoration: none;
 		color: #6BB9F0;
-		border-bottom: 1px #6BB9F0 dotted;;
+		border-bottom: 1.2px #6BB9F0 dotted;;
 		font-family: 'Roboto', sans-serif;
 	}
 
@@ -113,12 +128,23 @@
 	}
 
 	#social span{
-		padding-right: 10px;
-		padding-left: 10px;
+		padding-right: 9px;
+		padding-left: 9px;
+	}
+
+	#love{
+		 margin-top: 15px;
 	}
 }
 
-@media screen and (min-width: 480px){
+@media screen and (min-width: 400px){
+	#container, #links{
+		margin: 17px 17px 17px 17px;
+		padding: 20px 20px 20px 20px;
+	}
+}
+
+@media screen and (min-width: 640px){
 
 }
 
