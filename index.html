@@ -12,6 +12,7 @@
 
 		<link rel="icon" type="image/png" href="img/favicon.png">
 		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
 		<script src="https://use.fontawesome.com/f21ff73334.js"></script>
 		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -25,14 +26,14 @@
 		<div id="desktop">
 			<div id="menu">
 				<span>About me</span>
-				<span>Resume</span>
-				<span>Projects</span>
+				<span>R&eacute;sum&eacute;</span>
+				<span>Thoughts</span>
 				<span>Code</span>
 				<span>Photos</span>
 				<span>Social</span>
 			</div>
 
-			<div id="me">
+			<div id="me" data-parallax="scroll" data-image-src="img/full.jpg">
 				<div id="shiv">
                     <center>
                         <h1>Shivansh&nbsp;Rustagi</h1>
@@ -41,7 +42,7 @@
 			</div>
 		</div>
 
-		<div id="container">
+		<div id="container" class="wow lightSpeedIn">
 			<div id="name">Shivansh Rustagi</div>
 			<div id="header">
 				<hr id="profile" />
@@ -49,17 +50,18 @@
 			</div>
 
 			<h2>About me:</h2>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;I'm a rising senior at Henry M. Gunn High School. I'm interested in natural language processing, machine learning, full stack web development, and Android apps. In my free time, I <span style="font-family: 'Roboto', sans-serif;" class="element"></span>.</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;I'm a rising senior at Henry M. Gunn High School. I'm interested in natural language processing, machine learning, full stack web development, and Android apps.
+			<br />In my free time, I <span style="font-family: 'Roboto', sans-serif;" class="element"></span>.</p>
 
-			<h2>R&eacute;sum&eacute;:</h2>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-fw fa-file-pdf-o">&nbsp;&nbsp;</i><a href="docs/shiv_rustagi_resume.pdf" target="_blank">Here</a> is my r&eacute;sum&eacute;.</p>
+			<div id="resume"><h2>R&eacute;sum&eacute;:</h2>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-fw fa-file-pdf-o">&nbsp;&nbsp;</i><a href="docs/shiv_rustagi_resume.pdf" target="_blank">Here</a> is my r&eacute;sum&eacute;.</p></div>
 
-			<h2>Thoughts:</h2>
-			<p>&nbsp;&nbsp;&nbsp;<i class="fa fa-fw fa-medium"></i>&nbsp;I write on <a href="http://medium.com/@shivrustagi" target="_blank">Medium.</a></p>
+			<div id="thoughts"><h2>Thoughts:</h2>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-fw fa-medium"></i>&nbsp;I write on <a href="http://medium.com/@shivrustagi" target="_blank">Medium.</a></p></div>
 		</div>
 
 		<div id="links">
-			<div id="social">
+			<div id="social" class="wow slideInLeft">
 				<span><a href="#" target="_blank" alt="Photos"><i class="fa fa-2x fa-camera-retro"></i></a></span>
 				<span><a href="mailto:rustagi.shiv@gmail.com" target="_blank" alt="Email"><i class="fa fa-2x fa-envelope-square"></i></a></span>
 				<span><a href="http://github.com/srustagi" target="_blank" alt="Github"><i class="fa fa-2x fa-github-square"></i></a></span>
@@ -67,25 +69,27 @@
 				<span><a href="https://open.spotify.com/user/shivanshrustagi" target="_blank" alt="Spotify"><i class="fa fa-2x fa-spotify"></i></a></span>
 			</div>
 
-			<center><p id="love">Made with <span style="color: #C0392B;">&#x2764;</span> by Shivansh Rustagi</p></center>
+			<center><p id="love" class="wow slideInRight">Made with <span style="color: #C0392B;">&#x2764;</span> by Shivansh Rustagi</p></center>
 		</div>
 		
 		<script src="js/jquery.js"></script>
+		<script src="js/scroll.js"></script>
 		<script src="js/typed.js"></script>
 		<script>
 			$(function(){
+				new WOW().init();
 				$(".element").typed({
-					strings: ["volunteer", "listen to music", "take photos", "ride road bikes"],
+					strings: ["volunteer", "listen to music", "take photos", "ride road bikes", "scuba dive", "travel"],
 					typeSpeed: 80,
 					backDelay: 1700,
 					cursorChar: "",
 					fadeOut: true,
 					fadeOutClass: 'typed-fade-out',
-					loop: true,
+					loop: true
 				});
 			});
 		</script>
-
+		<script src="js/wow.js"></script>
 		<script src="js/plugins.js"></script>
 		<script src="js/main.js"></script>
 	</body>
