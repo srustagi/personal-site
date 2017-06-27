@@ -11,6 +11,10 @@
 	src: url('../font/Century Gothic.ttf');
 }
 
+*{
+	outline: none;
+}
+
 .typed-fade-out{
 	opacity: 0;
 	animation: 0;
@@ -117,6 +121,10 @@ html, body {
 	#love{
 		 margin-top: 15px;
 	}
+
+	#links span a:link, #links span a:hover, #links span a:active, #links span a:visited{
+    	color: #2c3e50;
+    }
 }
 
 @media screen and (min-width: 400px){
@@ -197,7 +205,7 @@ html, body {
     	box-shadow: none;
     }
 
-    #container h2, #dabout h2, #dthoughts h2{
+    #container h2, #dabout h2, #dthoughts h2, #contact h2{
     	margin-top: 100px;
     	width: 100;
     	text-align: center;
@@ -213,9 +221,21 @@ html, body {
 
     #dabout h2{ margin-top: .83em; }
 
+    #contact h2{ margin-top: 0; }
+
     #container p, #dabout p, #dthoughts p{
     	padding: 15px;
     	font-size: 22px;
+    }
+
+    #wrap{
+    	text-align: center;
+    }
+
+    form{
+    	display: inline-block;
+    	text-align: left;
+    	width: 60%;
     }
 
     input, textarea{
@@ -235,13 +255,27 @@ html, body {
     	cursor: crosshair;
     	text-transform: uppercase;
     	letter-spacing: 1px;
+    	width: 103.9%;
+    	margin-bottom: 20px;
     }
+
+    input::placeholder, textarea::placeholder{
+    	color: rgba(236, 240, 241, .7);
+    }
+
+  	label{
+  		font-family: 'Roboto';
+  	}
+
+  	textarea{
+  		resize: none;
+  	}
 
     #contact{
     	display: block;
-    	width: 100%;
     	background: #2c3e50;
     	color: white;
+    	padding: 40px;
     }
 
     #links{

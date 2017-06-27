@@ -70,37 +70,31 @@
 		<div id="dthoughts" class="wow slideInLeft"><h2>Thoughts</h2>
 			<p><i class="fa fa-fw fa-medium"></i>&nbsp;Check out some of my writing on <a href="http://medium.com/@shivrustagi" target="_blank">Medium.</a></p></div>
 
-		<!-- grid system is out of 12, so use it like this <div row> inside there put div class = col-# where # is that #/12 -->
-		<div id="contact">
-			<center>
-				<form action="https://formspree.io/rustagi.shiv@gmail.com"
-				      method="POST">
-				    <div class="row">
-				    	<div class="col-3"></div>
-					    	<div class="col-3"><input type="text" name="name" required></div>
-						    <div class="col-3"><input type="email" name="_replyto" required></div>
-						<div class="col-3"></div>
-				    </div>
-				    <div class="row">
-				    	<div class="col-3"></div>
-					    	<div class="col-3"><input type="text" name="phone" id="phone"></div>
-						    <div class="col-3"><textarea type="text" name="message" required></textarea></div>
-						<div class="col-3"></div>
-				    </div>
-				    <div class="row">
-				    	<div class="col-3"></div>
-			    		<input type="hidden" name="_next" value="//site.io/thanks.html" />
-			    		<input type="text" name="_gotcha" style="display:none" />
-					    <div class="col-6"><input type="submit"></div>
-					    <div class="col-3"></div>
-				    </div>
-				</form>
-			</center>
+		<div id="contact" class="wow bounceInUp">
+			<h2>Contact Me</h2>
+			<div id="wrap">
+			<form action="https://formspree.io/rustagi.shiv@gmail.com"
+			      method="POST">
+			      	<label for="name">Name:</label><br />
+					<input type="text" name="name" placeholder="John Smith" required>
+					<br /><br /><label for="_replyto">Email:</label><br />
+					<input type="email" name="_replyto" placeholder="you@email.com" required>
+				    <br /><br /><label for="phone">Phone:</label><br />
+				    <input type="text" name="phone" placeholder="(000) 000-0000" id="phone">
+					<br /><br /><label for="message">Message:</label><br />
+					<textarea type="text" name="message" placeholder="Hi there!" data-autoresize required></textarea>
+					<input type="hidden" name="_next" value="//github.com/srustagi" />
+		    		<input type="text" name="_gotcha" style="display:none" />
+				    <br /><br /><input type="submit">
+			</form>
+			</div>
 		</div>
 
 		<div id="links">
 			<div id="social" class="wow slideInLeft">
-				<span><a href="#" target="_blank" alt="Photos"><i class="fa fa-2x fa-camera-retro"></i></a></span>
+				<span><a href="http://instagram.com/shivrustagi" target="_blank" alt="Photos">
+				<!-- <i class="fa fa-2x fa-camera-retro"></i> -->
+				<i class="fa fa-2x fa-instagram"></i></a></span>
 				<span><a href="mailto:rustagi.shiv@gmail.com" target="_blank" alt="Email"><i class="fa fa-2x fa-envelope-square"></i></a></span>
 				<span><a href="http://github.com/srustagi" target="_blank" alt="Github"><i class="fa fa-2x fa-github-square"></i></a></span>
 				<span><a href="http://linkedin.com/in/srustagi" target="_blank" alt="LinkedIn"><i class="fa fa-2x fa-linkedin-square"></i></a></span>
@@ -129,6 +123,14 @@
 					fadeOut: true,
 					fadeOutClass: 'typed-fade-out',
 					loop: true
+				});
+				jQuery.each(jQuery('textarea[data-autoresize]'), function() {
+				    var offset = this.offsetHeight - this.clientHeight;
+				 
+				    var resizeTextarea = function(el) {
+				        jQuery(el).css('height', 'auto').css('height', el.scrollHeight + offset);
+				    };
+				    jQuery(this).on('keyup input', function() { resizeTextarea(this); }).removeAttr('data-autoresize');
 				});
 			});
 		</script>
