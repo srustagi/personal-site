@@ -29,7 +29,7 @@ html, body {
 		background: url('../img/paper.png');
 	}
 
-	#desktop, #contact{
+	#desktop, #contact, #dthoughts, #dabout{
 		display: none;
 	}
 
@@ -136,6 +136,10 @@ html, body {
 		display: inline-block;
 	}
 
+	#dthoughts, #dabout{
+		display: block;
+	}
+
 	#name, #header, #resume, #thoughts, #aboutme{
 		display: none;
 	}
@@ -189,7 +193,7 @@ html, body {
     #container, #dabout, #dthoughts{
     	padding: 0;
     	margin: 0 auto;
-    	width: 50%;
+    	width: 55%;
     	box-shadow: none;
     }
 
@@ -215,7 +219,10 @@ html, body {
     }
 
     #contact{
-
+    	display: block;
+    	width: 100%;
+    	background: #2c3e50;
+    	color: white;
     }
 
     #links{

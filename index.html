@@ -22,7 +22,6 @@
 			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
 
-		<!-- grid system is out of 12, so use it like this <div row> inside there put div class = col-# where # is that #/12 -->
 		<div id="desktop">
 			<div id="menu">
 				<span><a href="#dabout">About me</a></span>
@@ -37,13 +36,13 @@
 			<div id="me" data-parallax="scroll" data-image-src="img/full.jpg">
 				<div id="shiv">
                     <center>
-                        <h1>Shivansh&nbsp;Rustagi</h1>
+                        <h1 class="wow zoomIn">Shivansh&nbsp;Rustagi</h1>
                     </center>
                 </div>
 			</div>
 		</div>
 
-		<div id="dabout">
+		<div id="dabout" class="wow slideInLeft">
 			<h2>About me</h2>
 			<p>I'm a rising senior at Henry M. Gunn High School. I'm interested in natural language processing, machine learning, full stack web development, and Android apps.</p>
 		</div>
@@ -58,7 +57,7 @@
 			<div id="aboutme"><h2>About me</h2>
 			<p>I'm a rising senior at Henry M. Gunn High School. I'm interested in natural language processing, machine learning, full stack web development, and Android apps.</p></div>
 
-			<h2>What I do</h2>
+			<h2 id="do">What I do</h2>
 			<p>In my free time, I <span style="font-family: 'Roboto', sans-serif;" class="element"></span>.</p>
 
 			<div id="resume"><h2>R&eacute;sum&eacute;</h2>
@@ -68,8 +67,18 @@
 			<p><i class="fa fa-fw fa-medium"></i>&nbsp;I write on <a href="http://medium.com/@shivrustagi" target="_blank">Medium.</a></p></div>
 		</div>
 
-		<div id="dthoughts"><h2>Thoughts</h2>
+		<div id="dthoughts" class="wow slideInLeft"><h2>Thoughts</h2>
 			<p><i class="fa fa-fw fa-medium"></i>&nbsp;I write on <a href="http://medium.com/@shivrustagi" target="_blank">Medium.</a></p></div>
+
+		<!-- grid system is out of 12, so use it like this <div row> inside there put div class = col-# where # is that #/12 -->
+		<div id="contact">
+			<form action="https://formspree.io/rustagi.shiv@gmail.com"
+			      method="POST">
+			    <input type="text" name="name" required>
+			    <input type="email" name="_replyto" required>
+			    <input type="submit" value="Send">
+			</form>
+		</div>
 
 		<div id="links">
 			<div id="social" class="wow slideInLeft">
@@ -82,15 +91,18 @@
 
 			<center><p id="love" class="wow slideInRight">Made with <span style="color: #C0392B;">&#x2764;</span> by Shivansh Rustagi</p></center>
 		</div>
+
 		
 		<script src="js/jquery.js"></script>
 		<script src="js/scroll.js"></script>
 		<script src="js/typed.js"></script>
+		<script src="js/wow.js"></script>
+		<script src="js/plugins.js"></script>
 		<script>
 			$(function(){
 				new WOW().init();
 				$(".element").typed({
-					strings: ["volunteer", "listen to music", "take photos", "ride road bikes", "scuba dive", "travel"],
+					strings: ["volunteer", "listen to music", "take photos", "ride road bikes", "scuba dive", "travel", "ski"],
 					typeSpeed: 80,
 					backDelay: 1700,
 					cursorChar: "",
@@ -100,7 +112,5 @@
 				});
 			});
 		</script>
-		<script src="js/wow.js"></script>
-		<script src="js/plugins.js"></script>
 	</body>
 </html>
