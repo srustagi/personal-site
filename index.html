@@ -29,7 +29,7 @@
 				<span><a href="docs/shiv_rustagi_resume.pdf" target="_blank">R&eacute;sum&eacute;</a></span>
 				<span><a href="#dthoughts">Thoughts</a></span>
 				<span><a href="http://github.com/srustagi" target="_blank">Code</a></span>
-				<span><a href="#">Photos</a></span>
+				<!-- <span><a href="#">Photos</a></span> -->
 				<span><a href="#links">Social</a></span>
 			</div>
 
@@ -68,16 +68,34 @@
 		</div>
 
 		<div id="dthoughts" class="wow slideInLeft"><h2>Thoughts</h2>
-			<p><i class="fa fa-fw fa-medium"></i>&nbsp;I write on <a href="http://medium.com/@shivrustagi" target="_blank">Medium.</a></p></div>
+			<p><i class="fa fa-fw fa-medium"></i>&nbsp;Check out some of my writing on <a href="http://medium.com/@shivrustagi" target="_blank">Medium.</a></p></div>
 
 		<!-- grid system is out of 12, so use it like this <div row> inside there put div class = col-# where # is that #/12 -->
 		<div id="contact">
-			<form action="https://formspree.io/rustagi.shiv@gmail.com"
-			      method="POST">
-			    <input type="text" name="name" required>
-			    <input type="email" name="_replyto" required>
-			    <input type="submit" value="Send">
-			</form>
+			<center>
+				<form action="https://formspree.io/rustagi.shiv@gmail.com"
+				      method="POST">
+				    <div class="row">
+				    	<div class="col-3"></div>
+					    	<div class="col-3"><input type="text" name="name" required></div>
+						    <div class="col-3"><input type="email" name="_replyto" required></div>
+						<div class="col-3"></div>
+				    </div>
+				    <div class="row">
+				    	<div class="col-3"></div>
+					    	<div class="col-3"><input type="text" name="phone" id="phone"></div>
+						    <div class="col-3"><textarea type="text" name="message" required></textarea></div>
+						<div class="col-3"></div>
+				    </div>
+				    <div class="row">
+				    	<div class="col-3"></div>
+			    		<input type="hidden" name="_next" value="//site.io/thanks.html" />
+			    		<input type="text" name="_gotcha" style="display:none" />
+					    <div class="col-6"><input type="submit"></div>
+					    <div class="col-3"></div>
+				    </div>
+				</form>
+			</center>
 		</div>
 
 		<div id="links">
@@ -96,11 +114,13 @@
 		<script src="js/jquery.js"></script>
 		<script src="js/scroll.js"></script>
 		<script src="js/typed.js"></script>
+		<script src="js/input.js"></script>
 		<script src="js/wow.js"></script>
 		<script src="js/plugins.js"></script>
 		<script>
 			$(function(){
 				new WOW().init();
+				$("#phone").mask("(999) 999-9999",{placeholder:" "});
 				$(".element").typed({
 					strings: ["volunteer", "listen to music", "take photos", "ride road bikes", "scuba dive", "travel", "ski"],
 					typeSpeed: 80,

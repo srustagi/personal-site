@@ -218,6 +218,25 @@ html, body {
     	font-size: 22px;
     }
 
+    input, textarea{
+    	width: 100%;
+    	outline: none;
+    	padding: 15px;
+    	font-family: 'Roboto', sans-serif;
+    	border: 2px solid white;
+    	background: #2c3e50;
+    	color: white;
+    }
+
+    input[type=submit]{
+    	font-family: 'Ambroise', serif;
+    	padding: 10px;
+    	font-size: 32px;
+    	cursor: crosshair;
+    	text-transform: uppercase;
+    	letter-spacing: 1px;
+    }
+
     #contact{
     	display: block;
     	width: 100%;
