@@ -126,21 +126,17 @@ html, body {
 	}
 }
 
-@media screen and (min-width: 540px){
-	
-}
-
-@media screen and (min-width: 720px){
-	
-}
-
 @media screen and (min-width: 1080px){
+	body{
+		background: transparent;
+	}
+
 	#desktop{
 		width: 100%;
 		display: inline-block;
 	}
 
-	#name, #header, #resume, #thoughts{
+	#name, #header, #resume, #thoughts, #aboutme{
 		display: none;
 	}
 
@@ -167,7 +163,7 @@ html, body {
 	}
 
 	#me{
-		background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) );
+		background: linear-gradient( rgba(0, 0, 0, 0.14), rgba(0, 0, 0, 0.14) );
 		background-size: cover;
 		background-position: 50% 50%;
 		background-repeat: no-repeat;
@@ -178,34 +174,40 @@ html, body {
 	}
 
 	#shiv h1 {
-        width: 820px;
+        width: 720px;
         border: 2px solid white;
         outline: 2px solid white;
         outline-offset: 5px;
         font-family: 'Ambroise', serif;
-        font-size: 128px;
+        font-size: 96px;
         color: white;
         text-transform: uppercase;
         letter-spacing: 2px;
     }
 
-    #aboutme {
+    #container{
+    	padding: 0;
+    	margin: 0 auto;
+    	width: 60%;
+    	box-shadow: none;
+    }
+
+    #container h2{
+    	width: 100;
     	text-align: center;
+    	text-transform: uppercase;
+    	letter-spacing: 3px;
+    	border-radius: 3px;
     	background: #2c3e50;
     	color: white;
-    	font-family: 'Roboto';
-    	font-weight: 300;
-    	font-size: 32px;
-    	padding-bottom: 10px;
+    	font-family: 'Ambroise', serif;
+    	font-size: 36px;
+    	padding: 5px;
     }
-    
-    #aboutme h1{
-    	display: inline;
-    	padding: 0;
-    	margin: 0;
-    	font-family: 'Ambroise';
-    	font-size: 60px;
-    	color: white;
+
+    #container p{
+    	padding: 15px;
+    	font-size: 22px;
     }
 
     #contact{
