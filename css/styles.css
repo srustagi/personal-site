@@ -33,11 +33,11 @@ html, body {
 		background: url('../img/paper.png');
 	}
 
-	#desktop, #contact, #dthoughts, #dabout{
+	#desktop{
 		display: none;
 	}
 
-	#container, #links{
+	#container, #links, #contact{
 		display: block;
 		margin: 10px 10px 10px 10px;
 		padding: 10px 20px 10px 20px;
@@ -125,6 +125,46 @@ html, body {
 	#links span a:link, #links span a:hover, #links span a:active, #links span a:visited{
     	color: #2c3e50;
     }
+
+    #contact h2{ margin-top: 0; }
+
+    #wrap{
+    	margin-left: 10px; 
+    }
+
+    form{
+    	display: inline-block;
+    	text-align: left;
+    }
+
+    input, textarea{
+    	width: 100%;
+    	outline: none;
+    	padding: 10px;
+    	font-family: 'Roboto', sans-serif;
+    	border: 2px solid #2c3e50;
+    	background: white;
+    	color: #2c3e50;
+    }
+
+    input[type=submit]{
+    	font-family: 'Ambroise', serif;
+    	padding: 10px;
+    	font-size: 24px;
+    	cursor: crosshair;
+    	text-transform: uppercase;
+    	letter-spacing: 1px;
+    	margin-bottom: 20px;
+    }
+
+  	label{
+  		font-family: 'Roboto';
+  		color: #2c3e50;
+  	}
+
+  	textarea{
+  		resize: none;
+  	}
 }
 
 @media screen and (min-width: 400px){
@@ -148,7 +188,7 @@ html, body {
 		display: block;
 	}
 
-	#name, #header, #resume, #thoughts, #aboutme{
+	#name, #header, #resume{
 		display: none;
 	}
 
@@ -198,7 +238,7 @@ html, body {
         letter-spacing: 2px;
     }
 
-    #container, #dabout, #dthoughts{
+    #container{
     	padding: 0;
     	margin: 0 auto;
     	width: 55%;
@@ -206,7 +246,7 @@ html, body {
     }
 
     #container h2, #dabout h2, #dthoughts h2, #contact h2{
-    	margin-top: 100px;
+    	margin-top: 70px;
     	width: 100;
     	text-align: center;
     	text-transform: uppercase;
@@ -221,12 +261,12 @@ html, body {
 
     #dabout h2{ margin-top: .83em; }
 
-    #contact h2{ margin-top: 0; }
-
     #container p, #dabout p, #dthoughts p{
     	padding: 15px;
     	font-size: 22px;
     }
+
+    #contact h2{ margin-top: 0; }
 
     #wrap{
     	text-align: center;
@@ -255,7 +295,6 @@ html, body {
     	cursor: crosshair;
     	text-transform: uppercase;
     	letter-spacing: 1px;
-    	width: 103.9%;
     	margin-bottom: 20px;
     }
 
@@ -273,6 +312,8 @@ html, body {
 
     #contact{
     	display: block;
+    	margin: 0;
+    	border-radius: 0;
     	background: #2c3e50;
     	color: white;
     	padding: 40px;
