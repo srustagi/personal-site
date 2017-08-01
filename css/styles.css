@@ -1,7 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
-
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
-
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
@@ -364,6 +362,48 @@ textarea {
     }
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px
+}
+
+::-webkit-scrollbar-button {
+    width: 0;
+    height: 0
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2c3e50;
+    border: 0 none #fff;
+    border-radius: 0
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #374e66
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #273849
+}
+
+::-webkit-scrollbar-track {
+    background: #fff;
+    border: 0 none #fff;
+    border-radius: 0
+}
+
+::-webkit-scrollbar-track:hover {
+    background: #fff
+}
+
+::-webkit-scrollbar-track:active {
+    background: #fff
+}
+
+::-webkit-scrollbar-corner {
+    background: 0 0
+}
+
 @font-face {
     font-family: Ambroise;
     src: url(../font/ambroise.otf)
@@ -432,6 +472,9 @@ html {
     hr#profile {
         border-top: 3px double #2c3e50
     }
+    .cardhr {
+        display: none
+    }
     #avatar {
         margin: 0 auto;
         margin-top: -39px;
@@ -445,8 +488,9 @@ html {
         padding: 0;
         margin: 0;
         margin-top: 10px;
-        font-family: 'Century Gothic', sans-serif;
-        font-weight: 300;
+        font-family: Ambroise, serif;
+        text-transform: uppercase;
+        letter-spacing: 1px;
         color: #2c3e50;
         font-size: 24px
     }
@@ -512,7 +556,7 @@ html {
         display: inline-block
     }
     #about,
-    #dthoughts {
+    #thoughts {
         display: block
     }
     #header,
@@ -570,40 +614,48 @@ html {
         width: 55%;
         box-shadow: none
     }
+    #about h2,
     #contact h2,
     #container h2,
-    #about h2,
-    #dthoughts h2 {
-        margin-top: 70px;
-        width: 100;
-        text-align: center;
+    #thoughts h2 {
         text-transform: uppercase;
         letter-spacing: 3px;
-        border-radius: 3px;
-        background: #2c3e50;
-        color: #fff;
+        color: #2c3e50;
         font-family: Ambroise, serif;
         font-size: 36px;
-        padding: 5px
+        display: inline-block;
+        padding: 35px;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: 20px;
+        margin-bottom: -10px
     }
-    #about h2 {
-        margin-top: .83em
-    }
-    #container p,
     #about p,
-    #dthoughts p {
-        padding: 15px;
+    #container p,
+    #thoughts p {
+        padding: 35px;
+        margin: 0;
         font-size: 22px
     }
     #contact h2 {
         margin-top: 0
     }
-    .card:hover{
-        -webkit-box-shadow:0 1px 2px #aaa;
-        -moz-box-shadow:0 1px 2px #aaa;
-        -o-box-shadow:0 1px 2px #aaa;
-        box-shadow:0 1px 2px #aaa;
-        border-radius: 3px;   
+    .card {
+        width: 100%;
+        margin-bottom: 40px;
+        margin-top: 40px
+    }
+    .card:hover {
+        -webkit-box-shadow: 0 1px 2px #aaa;
+        -moz-box-shadow: 0 1px 2px #aaa;
+        -o-box-shadow: 0 1px 2px #aaa;
+        box-shadow: 0 1px 2px #aaa;
+        border-radius: 3px
+    }
+    .cardhr {
+        display: block;
+        border: 0;
+        border-bottom: 7px solid #2c3e50
     }
     #wrap {
         text-align: center
