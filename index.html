@@ -41,10 +41,10 @@
 
 			<div id="me" data-parallax="scroll" data-image-src="img/full.jpg">
 				<div id="shiv">
-                    <center>
-                        <h1 class="wow zoomIn">Shivansh&nbsp;Rustagi</h1>
-                    </center>
-                </div>
+					<center>
+						<h1 class="wow zoomIn">Shivansh&nbsp;Rustagi</h1>
+					</center>
+				</div>
 			</div>
 		</div>
 		
@@ -83,18 +83,18 @@
 			<h2>Contact Me</h2>
 			<div id="wrap">
 			<form action="https://formspree.io/rustagi.shiv@gmail.com"
-			      method="POST">
-			      	<label for="name">Name:</label><br />
+				  method="POST">
+					<label for="name">Name:</label><br />
 					<input type="text" name="name" placeholder="John Smith" required>
 					<br /><br /><label for="_replyto">Email:</label><br />
 					<input type="email" name="_replyto" placeholder="you@email.com" required>
-				    <br /><br /><label for="phone">Phone:</label><br />
-				    <input type="text" name="phone" placeholder="(000) 000-0000" id="phone">
+					<br /><br /><label for="phone">Phone:</label><br />
+					<input type="text" name="phone" placeholder="(000) 000-0000" id="phone">
 					<br /><br /><label for="message">Message:</label><br />
 					<textarea type="text" name="message" placeholder="Hi there!" data-autoresize required></textarea>
 					<input type="hidden" name="_next" value="//shivan.sh" />
-		    		<input type="text" name="_gotcha" style="display:none" />
-				    <br /><br /><input type="submit">
+					<input type="text" name="_gotcha" style="display:none" />
+					<br /><br /><input type="submit">
 			</form>
 			</div>
 		</div>
@@ -104,12 +104,12 @@
 				<span><a href="mailto:rustagi.shiv@gmail.com" target="_blank" alt="Email"><i class="fa fa-2x fa-envelope-square"></i></a></span>
 				<span><a href="http://github.com/srustagi" target="_blank" alt="Github"><i class="fa fa-2x fa-github-square"></i></a></span>
 				<span><a href="http://linkedin.com/in/srustagi" target="_blank" alt="LinkedIn"><i class="fa fa-2x fa-linkedin-square"></i></a></span>
-				<span><a href="https://open.spotify.com/user/shivanshrustagi" target="_blank" alt="Spotify"><i class="fa fa-2x fa-spotify"></i></a></span>
 				<span><a href="http://instagram.com/shivrustagi" target="_blank" alt="Photos">
+				<span><a href="https://open.spotify.com/user/shivanshrustagi" target="_blank" alt="Spotify"><i class="fa fa-2x fa-spotify"></i></a></span>
 				<!-- <i class="fa fa-2x fa-camera-retro"></i> -->
 				<i class="fa fa-2x fa-instagram"></i></a></span>
 				<span class="mobile"><a href="https://www.snapchat.com/add/shim.dodoubleg" target="_blank" alt="snapchat"><i class="fa fa-2x fa-snapchat"></i></a></span>
-				<span class="mobile"><a href="https://www.strava.com/athletes/8355819" target="_blank" alt="snapchat"><img height="34" src="img/icon-strava.svg"></a></span>
+				<span class="mobile"><a href="https://www.strava.com/athletes/8355819" target="_blank" alt="strava"><img height="34" src="img/icon-strava.svg"></a></span>
 			</div>
 
 			<center><p id="love" class="wow slideInRight">Made with <span style="color: rgba(192, 57, 43, 1.0);">&#x2764;</span> by Shivansh Rustagi</p></center>
@@ -126,12 +126,12 @@
 				new WOW().init();
 				$("#phone").mask("(999) 999-9999",{placeholder:" "});
 				jQuery.each(jQuery('textarea[data-autoresize]'), function() {
-				    var offset = this.offsetHeight - this.clientHeight;
+					var offset = this.offsetHeight - this.clientHeight;
 				 
-				    var resizeTextarea = function(el) {
-				        jQuery(el).css('height', 'auto').css('height', el.scrollHeight + offset);
-				    };
-				    jQuery(this).on('keyup input', function() { resizeTextarea(this); }).removeAttr('data-autoresize');
+					var resizeTextarea = function(el) {
+						jQuery(el).css('height', 'auto').css('height', el.scrollHeight + offset);
+					};
+					jQuery(this).on('keyup input', function() { resizeTextarea(this); }).removeAttr('data-autoresize');
 				});
 			});
 		</script>
