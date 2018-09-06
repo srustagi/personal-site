@@ -7,7 +7,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<title>Shivansh Rustagi</title>
-		<meta name="description" content="Everything Shiv Rustagi." />
+		<meta name="description" content="Shivansh Rustagi's personal site." />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<meta property="og:title" content="Shivansh Rustagi" />
@@ -28,109 +28,49 @@
 			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
 
-		<div id="desktop">
-			<div id="menu">
-				<span><a href="#about">About me</a></span>
-				<span><a href="#do">What I do</a></span>
-				<span><a href="docs/shiv_rustagi_resume.pdf" target="_blank">R&eacute;sum&eacute;</a></span>
-				<!-- <span><a href="#thoughts">Thoughts</a></span> -->
-				<span><a href="http://github.com/srustagi" target="_blank">Code</a></span>
-				<!-- <span><a href="http://photos.shivan.sh">Photos</a></span> -->
-				<span><a href="#links">Social</a></span>
-			</div>
-
-			<div id="me" data-parallax="scroll" data-image-src="img/full.jpg">
-				<div id="shiv">
-					<center>
-						<h1 class="wow zoomIn">Shivansh&nbsp;Rustagi</h1>
-					</center>
-				</div>
+		<div id="menu-wrap">
+			<nav id="menu" class="closed">
+				<a href="#">About</a>
+				<a href="#">Work</a>
+				<a href="#">Resume</a>
+				<a href="#">Contacts</a>
+				<a href="#">Social</a>
+			</nav>
+		</div>
+		<div id="header">
+			<div id="nav">
+				<div id="name">Shiv<span class="last-name"> Rustagi</span></div>
+				<div id="menu-toggle"><i class="fa fa-fw fa-bars"></i></div>
 			</div>
 		</div>
-		
-		<div id="container" class="wow lightSpeedIn">
-			<div id="name">Shivansh Rustagi</div>
-			<div id="header">
-				<hr id="profile" />
-				<div id="avatar"></div>
-			</div>
-			
-			<div class="card">
-				<hr class="cardhr" />
-				<div id="about"><h2>About me</h2>
-				<p>I'm a senior at Henry M. Gunn High School. I'm interested in natural language processing, machine learning, full stack web development, and Android apps.</p></div>
-			</div>
-
-			<div class="card">
-				<hr class="cardhr" />
-				<h2 id="do">What I do</h2>
-				<p>In my free time, I volunteer, code, listen to music, take photos, ride road bikes, scuba dive, travel, and ski.</p>
-			</div>
-
-			<div class="card" id="resume">
-				<h2>R&eacute;sum&eacute;</h2>
-				<p><i class="fa fa-fw fa-file-pdf-o">&nbsp;&nbsp;</i><a href="docs/shiv_rustagi_resume.pdf" target="_blank">Here</a> is my r&eacute;sum&eacute;.</p>
-			</div>
-
-			<!-- <div class="card" id="thoughts">
-				<hr class="cardhr" />
-				<h2>Thoughts</h2>
-				<p><i class="fa fa-fw fa-pencil-square"></i>&nbsp;Here is my <a href="http://words.shivan.sh">blog</a>.</p>
-			</div> -->
+		<div id="continue">
+			<span class="fa-stack fa-2x">
+			    <i class="fa fa-circle fa-stack-2x"></i>
+			    <i class="fa fa-chevron-down fa-stack-1x fa-inverse"></i>
+			</span>
+		</div>
+		<div id="body">
+			hi
 		</div>
 
-		<div id="contact" class="wow bounceInUp">
-			<h2>Contact Me</h2>
-			<div id="wrap">
-			<form action="https://formspree.io/rustagi.shiv@gmail.com"
-				  method="POST">
-					<label for="name">Name:</label><br />
-					<input type="text" name="name" placeholder="John Smith" required>
-					<br /><br /><label for="_replyto">Email:</label><br />
-					<input type="email" name="_replyto" placeholder="you@email.com" required>
-					<br /><br /><label for="phone">Phone:</label><br />
-					<input type="text" name="phone" placeholder="(000) 000-0000" id="phone">
-					<br /><br /><label for="message">Message:</label><br />
-					<textarea type="text" name="message" placeholder="Hi there!" data-autoresize required></textarea>
-					<input type="hidden" name="_next" value="//shivan.sh" />
-					<input type="text" name="_gotcha" style="display:none" />
-					<br /><br /><input type="submit">
-			</form>
-			</div>
-		</div>
-
-		<div id="links">
-			<div id="social" class="wow slideInLeft">
-				<span><a href="mailto:rustagi.shiv@gmail.com" target="_blank" alt="Email"><i class="fa fa-2x fa-envelope-square"></i></a></span>
-				<span><a href="http://github.com/srustagi" target="_blank" alt="Github"><i class="fa fa-2x fa-github-square"></i></a></span>
-				<span><a href="http://linkedin.com/in/srustagi" target="_blank" alt="LinkedIn"><i class="fa fa-2x fa-linkedin-square"></i></a></span>
-				<span><a href="http://instagram.com/shivrustagi" target="_blank" alt="Photos"><i class="fa fa-2x fa-instagram"></i></a></span>
-				<span><a href="https://open.spotify.com/user/shivanshrustagi" target="_blank" alt="Spotify"><i class="fa fa-2x fa-spotify"></i></a></span>
-				<span class="mobile"><a href="https://www.snapchat.com/add/shim.dodoubleg" target="_blank" alt="snapchat"><i class="fa fa-2x fa-snapchat"></i></a></span>
-				<span class="mobile"><a href="https://www.strava.com/athletes/8355819" target="_blank" alt="strava"><img height="34" src="img/icon-strava.svg"></a></span>
-			</div>
-
-			<center><p id="love" class="wow slideInRight">Made with <span style="color: rgba(192, 57, 43, 1.0);">&#x2764;</span> by Shivansh Rustagi</p></center>
-		</div>
-
-		
 		<script src="js/jquery.js"></script>
 		<script src="js/scroll.js"></script>
-		<script src="js/input.js"></script>
 		<script src="js/wow.js"></script>
 		<script src="js/plugins.min.js"></script>
 		<script>
 			$(function(){
-				new WOW().init();
-				$("#phone").mask("(999) 999-9999",{placeholder:" "});
-				jQuery.each(jQuery('textarea[data-autoresize]'), function() {
-					var offset = this.offsetHeight - this.clientHeight;
-				 
-					var resizeTextarea = function(el) {
-						jQuery(el).css('height', 'auto').css('height', el.scrollHeight + offset);
-					};
-					jQuery(this).on('keyup input', function() { resizeTextarea(this); }).removeAttr('data-autoresize');
+				$("#body").addClass("animation");
+				$("#menu-toggle").click(function(){
+					$("#menu-wrap").slideToggle();
 				});
+				$(window).scroll(function(){                          
+		            if ($(this).scrollTop() > 10) {
+		                $('#nav').css("background","rgba(255,255,255,0.8)");
+		            } else {
+		            	$('#nav').css("background","none");
+		            }
+		        });
+				new WOW().init();
 			});
 		</script>
 	</body>
