@@ -23,55 +23,51 @@
 		<script src="https://use.fontawesome.com/f21ff73334.js"></script>
 		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
 	</head>
-	<body>
+	<body id="top">
 		<!--[if lt IE 8]>
 			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
 
 		<div id="menu-wrap">
 			<nav id="menu" class="closed">
-				<a href="#">About</a>
-				<a href="#">Work</a>
-				<a href="#">Resume</a>
-				<a href="#">Contacts</a>
-				<a href="#">Social</a>
+				<a href="#about">About</a>
+				<a href="docs/shiv_rustagi_resume.pdf">Resume</a>
+				<a href="#contact">Contact</a>
 			</nav>
 		</div>
 		<div id="header">
 			<div id="nav">
-				<div id="name">Shiv<span class="last-name"> Rustagi</span></div>
+				<div id="name">Shiv Rustagi</div>
 				<div id="menu-toggle"><i class="fa fa-fw fa-bars"></i></div>
 			</div>
-		</div>
-		<div id="continue">
-			<span class="fa-stack fa-2x">
-			    <i class="fa fa-circle fa-stack-2x"></i>
-			    <i class="fa fa-chevron-down fa-stack-1x fa-inverse"></i>
-			</span>
+			<div id="pic">
+				<!-- <hr class="hr-one" /> -->
+				<div id="avatar"></div>
+			</div>
 		</div>
 		<div id="body">
-			hi
+			<h1 id="about">About Me</h1>
+			<p>My name is <span class="accent">Shivansh Rustagi</span>. I'm currently an undergraduate at U.C. Santa Cruz studying <span class="accent">Computer Science</span>. I'm interested in <span class="accent">deep learning, natural language processing</span>, web development, and design.</p>
+			<p>For fun, I enjoy taking photos, listening to music, cycling, and solving puzzles.</p>
 		</div>
+		<footer>
+			<nav id="contact">
+				<h3>Contact Me</h3>
+				<a><i class="fa fa-phone fa-fw"></i> +1 (650) 798-9389</a>
+				<a><i class="fa fa-envelope fa-fw"></i> shivansh@ucsc.edu</a>
+			</nav>
+				<nav id="social">
+					<span><a href="http://github.com/srustagi" target="_blank" alt="Github"><i class="fa fa-2x fa-github-square"></i></a></span>
+					<span><a href="http://linkedin.com/in/srustagi" target="_blank" alt="LinkedIn"><i class="fa fa-2x fa-linkedin-square"></i></a></span>
+					<span><a href="http://instagram.com/shivrustagi" target="_blank" alt="Photos"><i class="fa fa-2x fa-instagram"></i></a></span>
+					<span><a href="https://open.spotify.com/user/shivanshrustagi" target="_blank" alt="Spotify"><i class="fa fa-2x fa-spotify"></i></a></span>
+					<span class="mobile"><a href="https://www.snapchat.com/add/shim.dodoubleg" target="_blank" alt="snapchat"><i class="fa fa-2x fa-snapchat"></i></a></span>
+				</nav>
+		</footer>
 
 		<script src="js/jquery.js"></script>
 		<script src="js/scroll.js"></script>
 		<script src="js/wow.js"></script>
 		<script src="js/plugins.min.js"></script>
-		<script>
-			$(function(){
-				$("#body").addClass("animation");
-				$("#menu-toggle").click(function(){
-					$("#menu-wrap").slideToggle();
-				});
-				$(window).scroll(function(){                          
-		            if ($(this).scrollTop() > 10) {
-		                $('#nav').css("background","rgba(255,255,255,0.8)");
-		            } else {
-		            	$('#nav').css("background","none");
-		            }
-		        });
-				new WOW().init();
-			});
-		</script>
 	</body>
 </html>
