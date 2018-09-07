@@ -5,7 +5,7 @@
  * Dark grey: #39363d
  */
 
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700');
 
 @font-face {
     font-family: Bebas;
@@ -174,10 +174,124 @@ html,body { height: 100%; margin: 0px; padding: 0px; font-family: 'Raleway', san
 }
 
 @media screen and (min-width:720px) {
+    #name{
+        margin: 10px;
+        margin-top: 15px;
+        padding: 15px;
+        font-family: Bebas;
+        font-size: 30px;
+        letter-spacing: 0px;
+    }
+
+    #menu-toggle{
+        display: none;     
+    }
+
+    #menu-wrap{
+        position: relative;
+        width: auto;
+        margin-top: 0px;
+        height: auto;
+        display: inline;
+    }
+
+    #menu{
+        display: inline;
+        background: none;
+    }
+
+    #menu a {
+        display: inline-block;
+        margin-top: 40px;
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    #menu a:last-child{
+        margin-right: 40px;
+    }
+
+    #avatar{
+        height: 140px;
+        width: 140px;
+    }
+
+    #body, footer{
+        padding: 80px;
+    }
+
+    #contact a{
+        display: block;
+        padding: 5px;
+        padding-top: 10px;
+        font-size: 18px;
+    }
+
+    #social{
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 25px;
+    }
+
+    #social a{
+        padding-right: 20px;
+    }
 }
 
 @media screen and (min-width:1024px) {
-}
+    #name{
+        margin: 10px;
+        margin-top: 15px;
+        padding: 15px;
+        font-family: Bebas;
+        font-size: 30px;
+        letter-spacing: 0px;
+    }
 
-@media screen and (min-width:1200px) {
+    #menu a:last-child{
+        margin-right: 40px;
+    }
+
+    #about{
+        font-size: 32px;
+        font-weight: 500;
+    }
+
+    #body p{
+        font-size: 18px;
+        line-height: 2;
+    }
+
+    #body, footer{
+        padding: 120px 480px 120px 480px;
+    }
+
+    #contact h3{
+        font-weight: 400;
+        font-size: 32px;
+    }
+
+    #contact p a {
+        font-size: 18px;
+        font-weight: 300;
+        padding-top: 20px;
+    }
+
+    #social{
+        margin-top: -15px;
+        margin-left: 5px;
+    }
+
+    #avatar{
+        height: 175px;
+        width: 175px;
+    }
+
+    #social a{
+        padding-right: 40px;
+    }
 }
