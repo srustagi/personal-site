@@ -156,8 +156,9 @@ html,body { height: 100%; margin: 0px; padding: 0px; font-family: 'Raleway', san
         padding-top: 25px;
     }
 
-    #social a:link, #social a:hover, #social a:active, #social a:visited{
+    footer a:link, footer a:hover, footer a:active, footer a:visited{
         color: white;
+        text-decoration: none;
     }
 }
 
