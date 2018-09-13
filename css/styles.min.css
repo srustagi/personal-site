@@ -1,297 +1,110 @@
-/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
-/*
- * Red: #ff5400
- * Grey: #47434c
- * Dark grey: #39363d
- */
-
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700');
 
 @font-face {
-    font-family: Bebas;
+    font-family: 'Bebas';
     src: url(../font/bebas.ttf), url(../font/bebas.woff2), url(../font/bebas.woff);
 }
 
 hr,img{border:0}article,aside,details,figcaption,figure,footer,header,hgroup,hr,main,menu,nav,section,summary{display:block}pre,textarea{overflow:auto}body,fieldset{margin:0}fieldset,hr,legend,td,th{padding:0}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,optgroup,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:1px;border-top:1px solid #ccc;margin:1em 0}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}legend{border:0}textarea{resize:vertical}table{border-collapse:collapse;border-spacing:0}.hidden,.invisible{visibility:hidden}html{color:#222;font-size:1em;line-height:1.4}::-moz-selection{background:#b3d4fc;text-shadow:none}::selection{background:#b3d4fc;text-shadow:none}audio,canvas,iframe,img,svg,video{vertical-align:middle}fieldset{border:0}.browserupgrade{margin:.2em 0;background:#ccc;color:#000;padding:.2em 0}.hidden{display:none!important}.visuallyhidden{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.visuallyhidden.focusable:active,.visuallyhidden.focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}.clearfix:after,.clearfix:before{content:" ";display:table}.clearfix:after{clear:both}@media print{blockquote,img,pre,tr{page-break-inside:avoid}*,:after,:before{background:0 0!important;color:#000!important;box-shadow:none!important;text-shadow:none!important}a,a:visited{text-decoration:underline}a[href]:after{content:" (" attr(href) ")"}abbr[title]:after{content:" (" attr(title) ")"}a[href^="#"]:after,a[href^="javascript:"]:after{content:""}blockquote,pre{border:1px solid #999}thead{display:table-header-group}img{max-width:100%!important}h2,h3,p{orphans:3;widows:3}h2,h3{page-break-after:avoid}}
 
-html,body { height: 100%; margin: 0px; padding: 0px; font-family: 'Raleway', sans-serif; letter-spacing: 1px; }
+html,
+body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background: #3B7EA1;
+}
+
+a:link, a:hover, a:active, a:visited{
+    text-decoration: none;
+    color: #f4f4f4;
+    padding-bottom: 1px;
+    border-bottom: 1px dotted #f4f4f4;
+}
 
 @media screen and (min-width:320px) {
-    *:focus{
-        outline: none;
-    }
-
-    .accent{
-        color: #ff5400;
-    }
-
-    #header{
-        height: 100vh;
-        background: url('../img/header.jpg');
-        background-size: cover;
-        background-position: center;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
-    #nav{
-        position: fixed;
-        width: 100%;
-        font-family: 'Raleway', sans-serif;
-        color: #ff5400;
-        font-size: 24px;
-        letter-spacing: 2px;
-        display: flex;
-        justify-content: space-between;
-        background: rgba(255,255,255,0.95);
-    }
-
-    #name{
-        margin: 10px;
-        padding: 15px;
-        font-family: Bebas;
-        letter-spacing: 0px;
-    }
-
-    #menu-toggle{
-        border: 1px solid #ff5400;
-        border-radius: 3px;
-        margin: 25px 25px 20px 20px;
-        padding: 1px 1px 0px 3px;
-        float: right;
-        display: table;     
-    }
-
-    #menu-wrap{
-        position: fixed;
-        width: 100%;
-        margin-top: 80px;
-        height: calc(100% - 80px);
+    #page-right {
+        width: 0;
         display: none;
     }
 
-    #menu{
+    #page-left {
         height: 100%;
         width: 100%;
         display: flex;
-        justify-content: center;
-        align-items: center;
         flex-direction: column;
-        background: rgba(255,255,255,0.9);
-        
     }
 
-    #menu a {
-        margin: 20px;
-        text-align: center;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 500;
-        font-size: 14px;
-        text-transform: uppercase;
-        letter-spacing: 2px;
+    #left-wrap{
+        margin: 40px;
     }
     
-    #menu a:link, #menu a:active, #menu a:visited, #menu a:hover{
-        text-decoration: none;
-        color: #ff5400;
-    }
-
-    /*.hr-one{
-        overflow: visible;
-        padding: 0;
+    #page-left h1{
         margin: 0;
-        border: none;
-        border-top: 1px solid #39363D;
-        width: 80%;
-        color: white;
-    }*/
-
-    #pic{
-        width: 100%;
-        padding-top: 55vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #avatar{
-        background: url('../img/avatar.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 140px;
-        width: 140px;
-        border: 3px solid #39363d;
-        border-radius: 100%;
-        margin-top: -53px;
-    }
-
-    #body{
-        display: block;
-        padding: 40px;
-        color: #39363d;
-    }
-
-    #body h1{
+        padding: 0;
         font-weight: 300;
-        margin-top: 0;
-    }
-
-    footer{
-        background: #ff5400;
-        padding: 50px;
-        color: white;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-    }
-
-    #contact h3{
-        margin: 0px 0px 10px 0px;
-    }
-
-    #contact a{
-        display: block;
-        padding: 5px;
-        padding-top: 10px;
-        font-size: 18px;
-    }
-
-    #social{
-        display: flex;
-        justify-content: space-between;
-        padding-top: 25px;
-    }
-
-    footer a:link, footer a:hover, footer a:active, footer a:visited{
-        color: white;
-        text-decoration: none;
-    }
-}
-
-@media screen and (min-width:400px) {
-    #social{
-        justify-content: space-between;
-    }
-}
-
-@media screen and (min-width:720px) {
-    #name{
-        margin: 10px;
-        margin-top: 15px;
-        padding: 15px;
-        font-family: Bebas;
-        font-size: 30px;
-        letter-spacing: 0px;
-    }
-
-    #menu-toggle{
-        display: none;     
-    }
-
-    #menu-wrap{
-        position: relative;
-        width: auto;
-        margin-top: 0px;
-        height: auto;
-        display: inline;
-    }
-
-    #menu{
-        display: inline;
-        background: none;
-    }
-
-    #menu a {
-        display: inline-block;
-        margin-top: 40px;
-        text-align: center;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 700;
-        font-size: 14px;
-        text-transform: uppercase;
         letter-spacing: 2px;
+        font-size: 48px;
+        font-family: 'Bebas', sans-serif;
+        color: #f4f4f4;
     }
 
-    #menu a:last-child{
-        margin-right: 40px;
-    }
-
-    #avatar{
-        height: 140px;
-        width: 140px;
-    }
-
-    #body, footer{
-        padding: 80px;
-    }
-
-    #contact a{
-        display: block;
-        padding: 5px;
-        padding-top: 10px;
-        font-size: 18px;
+    #page-left p{
+        font-family: 'Abel', sans-serif;
+        letter-spacing: 0.5px;   
+        color: #f4f4f4;
+        line-height: 1.75;
     }
 
     #social{
         display: flex;
         justify-content: flex-start;
-        padding-top: 25px;
+        font-size: 24px;
     }
 
     #social a{
+        border: none;
         padding-right: 20px;
+        margin-top: 20px;
     }
 }
 
-@media screen and (min-width:1024px) {
-    #name{
-        margin: 10px;
-        margin-top: 15px;
-        padding: 15px;
-        font-family: Bebas;
-        font-size: 30px;
-        letter-spacing: 0px;
+@media screen and (min-width:400px) {
+    #page-left h1{
+        font-size: 56px;
+    }
+}
+
+@media screen and (min-width:720px) {
+
+}
+
+@media screen and (min-width:1200px) {
+    body{
+        display: flex;
     }
 
-    #menu a:last-child{
-        margin-right: 40px;
+    #page-left{
+        margin: 0;
+        padding: 0;
+        width: 30%;
     }
 
-    #about{
-        font-size: 32px;
-        font-weight: 500;
+    #page-left p{
+        font-size: 16px;
     }
 
-    #body p{
-        font-size: 18px;
-        line-height: 2;
+    #left-wrap{
+        margin: 100px;
     }
 
-    #body, footer{
-        padding: 120px 480px 120px 480px;
-    }
-
-    #contact h3{
-        font-weight: 400;
-        font-size: 32px;
-    }
-
-    #contact p a {
-        font-size: 18px;
-        font-weight: 300;
-        padding-top: 20px;
-    }
-
-    #social{
-        margin-top: -15px;
-        margin-left: 5px;
-    }
-
-    #avatar{
-        height: 175px;
-        width: 175px;
-    }
-
-    #social a{
-        padding-right: 40px;
+    #page-right{
+        display: block;
+        width: 80%;
+        min-height: 100%;
+        background: url('../img/header.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
     }
 }
