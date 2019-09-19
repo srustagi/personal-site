@@ -1,10 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Abel);
-@font-face {
-    font-family: Bebas;
-    src: url(../font/bebas.ttf), url(../font/bebas.woff2), url(../font/bebas.woff)
-}
-
-@import url('normalize,css');
+@import url('https://fonts.googleapis.com/css?family=Abel|Lexend+Deca&display=swap');
+@import url('normalize.css');
 
 body,
 html {
@@ -89,14 +84,14 @@ a:visited {
     #page-left h1 {
         margin: 0;
         padding: 0;
-        font-weight: 300;
-        letter-spacing: 2px;
-        font-size: 48px;
-        font-family: Bebas, sans-serif;
+        font-weight: 400;
+        letter-spacing: -1px;
+        font-size: 24px;
+        font-family: 'Lexend Deca', sans-serif;
         color: #f4f4f4;
     }
     #page-left p {
-        font-family: Abel, sans-serif;
+        font-family: 'Abel', sans-serif;
         letter-spacing: .5px;
         color: #f4f4f4;
         line-height: 1.75;
@@ -115,7 +110,7 @@ a:visited {
 
 @media screen and (min-width:400px) {
     #page-left h1 {
-        font-size: 56px
+        font-size: 48px
     }
 }
 
